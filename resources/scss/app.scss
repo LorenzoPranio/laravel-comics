@@ -82,3 +82,50 @@ main{
         }
     }
 }
+
+footer{
+    .bg-img{
+        background-image: url(../img/footer-bg.jpg);
+        background-size: cover;
+        overflow: hidden;
+        position: relative;
+    
+        .col-6{
+            display: flex;
+    
+            h4{
+                color: white;
+            }
+    
+            .logo{
+                position: absolute;
+                z-index: 2;
+                width: 550px;
+                top: 50%;
+                left: 70%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+    .bg-footer{
+        background-color:rgb(70, 70, 70);
+        z-index: 1;
+        button{
+            background-color: transparent;
+            border: 3px solid #0c7cec;
+            padding: 10px 15px;
+            p{
+                margin: 0px;
+                color:  white;
+            }
+        }
+        .t-blue{
+            color: #0c7cec;
+            margin: 0px;
+            font-size: 20px;
+        }
+        img{
+            margin: 0px 10px;
+        }
+    }
+}
