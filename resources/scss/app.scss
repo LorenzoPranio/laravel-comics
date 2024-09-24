@@ -19,6 +19,18 @@ header{
         }
     }
 }
+.form-control{
+    border: none;
+}
+.bottom-border{
+    border-bottom: 5px solid #0c7cec;
+}
+.btn-bottom{
+    border-bottom: 5px solid #0c7cec;
+    .bi-search{
+        font-weight: bolder;
+    }
+}
 
 main{
     .col-12{
