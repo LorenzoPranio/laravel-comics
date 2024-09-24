@@ -7,14 +7,16 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 p-2 d-flex flex-wrap justify-content-center mt-3">
-                        <div v-for="(comic, index) in comics" :key="index" class="col-2 d-flex">
-                            <div class="card m-2">
-                                <img :src="comic.thumb" :alt="comic.series" class="card-img-top img-fluid">
-                                <div>
-                                    <p class="text-center"></p>
+                        @foreach ($comics as $comic)
+                            <div class="col-2 d-flex">
+                                <div class="card border-0 bg-transparent w-100 mx-3">
+                                    <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}" class="card-img-top img-fluid">
+                                    <div>
+                                        <h5 class="text-white text-center pt-2">{{ $comic['series'] }}</h5>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        @endforeach
                         <div>
                             <button class="btn btn-primary"><p class="fw-bold">LOAD MORE</p></button>
                         </div>
